@@ -5,9 +5,12 @@ root=$(cd "$(dirname "$BASH_SOURCE")/.." && pwd)
 
 main() {
   cd "$root"
-  browserify src -o runtime/src.js
+  mkdir -p coverage
+  export PATH="$PWD/node_modules/.bin:$PATH"
+  browserify src -t browserify-istanbul -o runtime/src.js
   browserify test -o runtime/test.js
-  mocha-phantomjs data/test.html
+  phantomjs ./node_modules/mocha-phantomjs/lib/mocha-phantomjs.coffee data/test.html spec '{"hooks": "mocha-phantomjs-istanbul", "coverageFile": "coverage/coverage.json", "useColors": true}'
+  istanbul report --root . lcov
 }
 
 main "$@"
