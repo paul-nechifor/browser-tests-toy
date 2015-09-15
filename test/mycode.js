@@ -3,6 +3,6 @@ describe('packagex', function () {
         (1 + 1).should.be.equal(2);
     });
     it('should equal 3', function () {
-        (1 + 1).should.be.equal(3);
+        (1 + 2).should.be.equal(3);
     });
 });
