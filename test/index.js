@@ -1,1 +1,2 @@
 require('./Calc');
+require('./App');
