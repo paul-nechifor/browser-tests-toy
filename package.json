@@ -4,6 +4,7 @@
   "author": "Paul Nechifor <paul@nechifor.net> (http://nechifor.net/)",
   "license": "MIT",
   "scripts": {
+    "postinstall": "scripts/bootstrap",
     "test": "mocha-phantomjs data/test.html"
   },
   "dependencies": {
