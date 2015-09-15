@@ -12,7 +12,9 @@
       mocha.reporter('html');
       chai.should();
     </script>
-    <script src='../test/mycode.js'></script>
+    <script src='../node_modules/jquery/dist/jquery.js'></script>
+    <script src='../runtime/src.js'></script>
+    <script src='../runtime/test.js'></script>
     <script>
       if (window.mochaPhantomJS) { mochaPhantomJS.run(); }
       else { mocha.run(); }
