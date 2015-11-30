@@ -3,8 +3,8 @@
 root=$(cd "$(dirname "$BASH_SOURCE")/.." && pwd)
 
 main() {
-  cd "$root"
-  mkdir -p runtime
+    cd "$root"
+    mkdir -p runtime
 }
 
 main "$@"
