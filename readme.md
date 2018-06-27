@@ -1,3 +1,7 @@
+# This repository has been moved to [gitlab.com/paul-nechifor/browser-tests-toy](http://gitlab.com/paul-nechifor/browser-tests-toy).
+
+Old readme:
+
 # Browser Tests Toy
 
 Trying out Mocha+PhantomJS "unit tests".

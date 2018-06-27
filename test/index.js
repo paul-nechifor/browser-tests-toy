@@ -1,2 +1,0 @@
-require('./Calc');
-require('./App');
